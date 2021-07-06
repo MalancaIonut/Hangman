@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hangman</title>
+  </head>
+  <body>
+    <br>
+    <h1>Hangman Game</h1>
+    <h5 id="toShort">The inserted word it's to short, it well be to easy for you. Please insert a longer word!</h5>
+    <h5 id="notWord">Please insert a word which contains only letters!</h5>
+    <div class="container">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Insert a word" id="myInput">
+        <button class="btn btn-light" id="play" onclick="start();"><i class="lar la-play-circle" style="font-size:24px"></i></button>
+      </div>
+    </div>
+    <div class="checkLetters" id="checkLetters">
+      <p id="guess">Try to guess the word</p>
+      <p id="wrongVowel">Number of vowels you can miss: 3</p>
+      <br>
+      <button class="btn btn-light" type="button" id="reset" onclick="refreshPage()"><i class="las la-redo-alt" style="font-size:24px"></i></button>
+    </div>
+    <br>
+    <div class="letters" id="letters">
+        <button class="btn btn-light alphabet" type="button" id="A" onclick="checkLetter('A')">A</button>
+        <button class="btn btn-light alphabet" type="button" id="B" onclick="checkLetter('B')">B</button>
+        <button class="btn btn-light alphabet" type="button" id="C" onclick="checkLetter('C')">C</button>
+        <button class="btn btn-light alphabet" type="button" id="D" onclick="checkLetter('D')">D</button>
+        <button class="btn btn-light alphabet" type="button" id="E" onclick="checkLetter('E')">E</button>
+        <button class="btn btn-light alphabet" type="button" id="F" onclick="checkLetter('F')">F</button>
+        <button class="btn btn-light alphabet" type="button" id="G" onclick="checkLetter('G')">G</button>
+        <button class="btn btn-light alphabet" type="button" id="H" onclick="checkLetter('H')">H</button>
+        <button class="btn btn-light alphabet" type="button" id="I" onclick="checkLetter('I')">I</button>
+        <button class="btn btn-light alphabet" type="button" id="J" onclick="checkLetter('J')">J</button>
+        <button class="btn btn-light alphabet" type="button" id="K" onclick="checkLetter('K')">K</button>
+        <button class="btn btn-light alphabet" type="button" id="L" onclick="checkLetter('L')">L</button>
+        <button class="btn btn-light alphabet" type="button" id="M" onclick="checkLetter('M')">M</button>
+        <button class="btn btn-light alphabet" type="button" id="N" onclick="checkLetter('N')">N</button>
+        <button class="btn btn-light alphabet" type="button" id="O" onclick="checkLetter('O')">O</button>
+        <button class="btn btn-light alphabet" type="button" id="P" onclick="checkLetter('P')">P</button>
+        <button class="btn btn-light alphabet" type="button" id="Q" onclick="checkLetter('Q')">Q</button>
+        <button class="btn btn-light alphabet" type="button" id="R" onclick="checkLetter('R')">R</button>
+        <button class="btn btn-light alphabet" type="button" id="S" onclick="checkLetter('S')">S</button>
+        <button class="btn btn-light alphabet" type="button" id="T" onclick="checkLetter('T')">T</button>
+        <button class="btn btn-light alphabet" type="button" id="U" onclick="checkLetter('U')">U</button>
+        <button class="btn btn-light alphabet" type="button" id="V" onclick="checkLetter('V')">V</button>
+        <button class="btn btn-light alphabet" type="button" id="W" onclick="checkLetter('W')">W</button>
+        <button class="btn btn-light alphabet" type="button" id="X" onclick="checkLetter('X')">X</button>
+        <button class="btn btn-light alphabet" type="button" id="Y" onclick="checkLetter('Y')">Y</button>
+        <button class="btn btn-light alphabet" type="button" id="Z" onclick="checkLetter('Z')">Z</button>
+    </div> 
+    <br>
+    <canvas id="canvas"></canvas> 
+
+
+    <!-- Jquery and Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- JavaSript -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

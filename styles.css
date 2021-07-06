@@ -1,0 +1,99 @@
+
+body {
+	background-color: black;
+	background-blend-mode: screen;
+  	background-repeat: no-repeat;
+ 	background-size: 100%;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive;
+	text-align: center;
+	color: white;
+}
+
+p {
+	font-family: 'Lucida Handwriting', cursive;
+}
+
+.container {
+  visibility: visible;
+}
+
+.checkLetters {
+  visibility: hidden;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 20px 50px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.letters {
+	visibility: hidden;
+	margin: auto;
+	width: 80%;
+}
+
+.alphabet {
+	height: 40px;
+	width: 35px;
+	text-align: center;
+	vertical-align: middle;
+	text-align: center;
+	border-color: white;
+	margin: 4px;
+	border-radius: 5px;
+	text-transform: capitalize;
+}
+
+.letterBox {
+  height: 40px;
+  width: 35px;
+  text-align: center;
+  border-color: black;
+  margin: 7px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+#guess {
+	float: left;
+	text-align: middle;
+	color: white;
+}
+
+#toShort {
+	visibility: hidden;
+	text-align: center;
+	color: white;
+}
+
+#notWord {
+	visibility: hidden;
+	text-align: center;
+	color: white;
+}
+
+#wrongVowel {
+	float : right;
+	text-align: middle;
+	color: white;
+}
+
+#reset {
+	visibility: hidden;
+	vertical-align: middle;
+	float: right;
+}
+
+#canvas {
+	visibility: hidden;
+	width: 400px;
+	height: 400px;
+	border : 2px solid white;
+	border-radius: 5px;
+	margin: auto;
+	display: block;
+}
