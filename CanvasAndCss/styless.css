@@ -1,13 +1,13 @@
 body {
 	background-color: black;
 	background-blend-mode: screen;
-  background-repeat: no-repeat;
+  	background-repeat: no-repeat;
  	background-size: 100%;
 }
 
 h1 {
-  font-family: 'Brush Script MT', cursive;
-  text-align: center;
+  	font-family: 'Brush Script MT', cursive;
+  	text-align: center;
 	color: white;
 }
 
@@ -16,17 +16,17 @@ p {
 }
 
 .container {
-  visibility: visible;
+  	visibility: visible;
 }
 
 .checkLetters {
-  visibility: hidden;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px 20px 50px;
-  text-align: center;
-  border: 2px solid white;
-  border-radius: 8px;
+	visibility: hidden;
+  	width: 80%;
+  	margin: 0 auto;
+	padding: 20px 20px 50px;
+  	text-align: center;
+  	border: 2px solid white;
+  	border-radius: 8px;
 }
 
 .letters {
@@ -48,13 +48,13 @@ p {
 }
 
 .letterBox {
-  height: 40px;
-  width: 35px;
-  text-align: center;
-  border-color: black;
-  margin: 7px;
-  border-radius: 5px;
-  text-transform: capitalize;
+	height: 40px;
+  	width: 35px;
+  	text-align: center;
+  	border-color: black;
+  	margin: 7px;
+  	border-radius: 5px;
+  	text-transform: capitalize;
 }
 
 #guess {
